@@ -4,10 +4,10 @@ Making a hotspot is still your task.
 # emoProxy
 The Proxy but then in an debian app! It has everything from the proxy in it so its a lot faster to setup.
 # How to install
-1. go to the release tab and download the latest version (emoproxy_{version}.deb)
+1. go to the release tab and download the latest version (emoproxy_v{version}.deb)
 2. Install the package with your installer. Example:
 ```
-sudo dpkg -i emoProxy_1.0.0.deb
+sudo dpkg -i emoProxy_{version}.deb
 ```
 3. Open the app. The app is named "emoProxy".
 # Using the app
