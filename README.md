@@ -16,7 +16,7 @@ sudo dpkg -i emoProxy_{version}.deb
 3. Clone the project by pressing its button. If it says the direcotory already exists, it can be you pressed the button before. To be safe, click the "Delete Repo" button and the click the "Clone project" button again.
 4. Press "Start Proxy". At the right it will say it started. If it stops (most of the time it will give an exit code), then click first "Stop All" and then "Start Proxy" again.
 5. Press "Start Docker app". It will start docker.If it gives the error that the containers already exist with the same name, press the "Del Containers" button first and then press the docker button again.
-6. Now its running! Check the right side log to see the things coming in.
+6. Now its running! Check the right side log to see the things coming in. Press "Stop All" to stop the proxy.
 
 # SSL keys (with openssl)
 This app will create ssl certs and keys with openssl after pressing the "Clone project" button. They are used for communication with your emo robot.
