@@ -13,7 +13,7 @@ Proxy link: https://github.com/emo-libre
 ```
 # Using the app
 1. Make a hotspot. This app does not have a "hotspot-manager" or something like that.
-2. Open the app and press "Install dependencies". At the right you will see the logs, check if everything goes to plan. Please go to #2 in the part of the readme named "Errors you (could) get" if something goes wrong in this step.
+2. Open the app and press "Install dependencies". At the right you will see the logs, check if everything goes to plan. Please go to [this part](https://github.com/JoVe13/emoProxy/blob/main/README.md?plain=1#L28) if something goes wrong in this step.
 3. Clone the project by pressing its button. If it says the direcotory already exists, it can be you pressed the button before. To be safe, click the "Delete Repo" button and the click the "Clone project" button again.
 4. Press "Start Proxy". At the right it will say it started. If it stops (most of the time it will give an exit code), then click first "Stop All" and then "Start Proxy" again.
 5. Press "Start Docker app". It will start docker.If it gives the error that the containers already exist with the same name, press the "Del Containers" button first and then press the docker button again.
