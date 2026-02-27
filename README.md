@@ -1,6 +1,6 @@
 # WARNING! THIS IS A FULLY NEW APP, PLEASE EXPECT BUGS!
 This app is for all linux operating systems that IS x86-64 USUALLY its intel or AMD if it doesnt work pls make an issue and we will run like 5 lamborginis to try and fix this.
-Making a hotspot is still your task.
+Making a hotspot is still your task. Go [here]() for how to setup the linux-wifi-hotspot package with the correct settings.
 
 ---
 
@@ -202,8 +202,8 @@ we use ~ to represent /home/yourusername/ so ~/ will be /home/yourusername/ itll
 ---
 
 # Using the app
-1. Make a hotspot. This app does not have a "hotspot-manager" or something like that.
-2. Open the app and press "Install dependencies". At the right you will see the logs, check if everything goes to plan. Please go to [this part](https://github.com/JoVe13/emoProxy/blob/main/README.md?plain=1#L28) if something goes wrong in this step.
+1. Make a hotspot. go [here]() for an easy tutorial on how to use the linux-wifi-hotspot app with the correct settings.
+2. Open the app and press "Install dependencies". At the right you will see the logs, check if everything goes to plan. Please go to [this part](https://github.com/JoVe13/emoProxy/blob/main/README.md?plain=1#L222) if something goes wrong in this step.
 3. Clone the project by pressing its button. If it says the direcotory already exists, it can be you pressed the button before. To be safe, click the "Delete Repo" button and the click the "Clone project" button again.
 4. Press "Start Proxy". At the right it will say it started. If it stops (most of the time it will give an exit code), then click first "Stop All" and then "Start Proxy" again.
 5. Press "Start Docker app". It will start docker.If it gives the error that the containers already exist with the same name, press the "Del Containers" button first and then press the docker button again.
@@ -216,9 +216,47 @@ This app will create ssl certs and keys with openssl after pressing the "Clone p
 
 ---
 
+# Making an hotspot with linux-wifi-hotspot app
+1. Installing
+<details>
+  <summary>Debian based</summary>
+  
+```
+sudo add-apt-repository ppa:lakinduakash/lwh
+sudo apt update
+sudo apt install linux-wifi-hotspot
+```
+</details>
+<details>
+  <summary>Arch based</summary>
+(I am using for this example yay, but you can use what every package installer)
+  
+```
+yay -S linux-wifi-hotspot
+```
+</details>
+<details>
+  <summary>Fedora based</summary>
+  
+```
+sudo dnf copr enable zinix01/linux-wifi-hotspot
+sudo dnf install linux-wifi-hotspot
+```
+</details>
+2. Open the app. (Type in the search bar Hotspot, you will see it then)
+3. Change the settings:
+SSID = What ever you want, example: EMOProxy, MyHotspot etc.
+Password = Again what ever you want, example: 12345678, MyHotspot, or press "Open" for no password.
+Wifi interface = wlan0, wla0, wlan1, wla1, etc. (the one you get wifi from)
+Internet interface = wlan0, wlo0, wlan1, wlo1, etc. (the one you want to use your for your hotspot, this can be the same as the wifi interface if it supports it)
+Open de tab advanced:
+Frequency band = 2.4 Ghz
+Gateway = 192.168.12.1 (or your hotspot IP if it's diffrent)
+Channel = Your current channel from your wifi (you can get it by running ```iw dev | grep -E 'Interface|channel```)
+
 # Errors you (could) get
 1. ### ```ap0``` doesnt exist
-   Make sure you started your hotspot! If the hotspot is running but it still gives this error, go to ```/home/{user}/emoProxy/dnsmasq.conf``` and change interface=ap0 to your hotspot interface.
+   Make sure you started your hotspot! If the hotspot is running but it still gives this error, go to ```{applocation}/emoProxy/dnsmasq.conf``` and change interface=ap0 to your hotspot interface.
 2. ### One (or more) of the dependecies wont download
    Make sure these packages are downloaded:
    1. git
