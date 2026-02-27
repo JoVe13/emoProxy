@@ -1,8 +1,13 @@
 # WARNING! THIS IS A FULLY NEW APP, PLEASE EXPECT BUGS!
 This app is for all linux operating systems that IS x86-64 USUALLY its intel or AMD if it doesnt work pls make an issue and we will run like 5 lamborginis to try and fix this.
 Making a hotspot is still your task.
+
+---
+
 # emoProxy
 The Proxy but then in an AppImage! It has everything from the proxy in it so its a lot faster to setup.
+
+---
 
 # THE SCRIPT AND BETTER INSTALL GUIDE BY SUDOED_MASTER :D
 
@@ -173,6 +178,7 @@ keep the appimage and execute this is the same directory itll also chmod it so y
 ```
 chmod +x emoProxy-x86_64.AppImage  && ./emoProxy-x86_64.AppImage --appimage-extract && cd squashfs-root && mkdir ~/emoproxy-ea && cp -r * ~/emoproxy-ea && cd emoproxy-ea && chmod +x AppRun && sudo desktop-file-install emoProxy.desktop && echo -e “All install process done for the AppImage thank you for trying this out script made by Sudoed_Master and it definitely didn’t take an hour to write :D” 
 ```
+---
 
 # Using the app
 1. Make a hotspot. This app does not have a "hotspot-manager" or something like that.
@@ -182,8 +188,12 @@ chmod +x emoProxy-x86_64.AppImage  && ./emoProxy-x86_64.AppImage --appimage-extr
 5. Press "Start Docker app". It will start docker.If it gives the error that the containers already exist with the same name, press the "Del Containers" button first and then press the docker button again.
 6. Now its running! Check the right side log to see the things coming in. Press "Stop All" to stop the proxy.
 
+---
+
 # SSL keys (with openssl)
 This app will create ssl certs and keys with openssl after pressing the "Clone project" button. They are used for communication with your emo robot.
+
+---
 
 # Errors you (could) get
 1. ### ```ap0``` doesnt exist
