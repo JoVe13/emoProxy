@@ -14,7 +14,7 @@ The Proxy but then in an AppImage! It has everything from the proxy in it so its
 Proxy link: https://github.com/emo-libre
 # How to install
 1. go to the release tab and download the latest version (emoproxy_86x-64x.appimage)
-2. **Install FUSE**
+2. **Install FUSE** (or double click the file for opening without install)
 # Install FUSE on Linux
 
 This guide shows how to install FUSE on Debian based, Arch based, and Fedora based distributions.
